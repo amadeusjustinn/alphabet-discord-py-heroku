@@ -1,5 +1,4 @@
 import discord
-from dotenv import load_dotenv
 import json
 import os
 import functions as func
@@ -59,5 +58,4 @@ async def on_message(message):
     return
 
 # Read secret token
-load_dotenv()
-client.run(os.getenv("TOKEN"))
+client.run(os.getenv("DISCORD_TOKEN"))
